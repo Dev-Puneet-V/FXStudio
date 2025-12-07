@@ -1,2 +1,2 @@
 # Real-Time Audio FX Studio (Mobile)
-A mobile application that processes microphone audio in real-time, applying professional-grade voice enhancement and creative effects like bass boost, reverb, pitch change, compressor, equalizer, and more.
+A mobile application that processes microphone audio in real-time, applying professional-grade voice enhancement and creative effects like bass boost, reverb, pitch change, compressor, equalizer, and many more things.

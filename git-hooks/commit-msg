@@ -1,0 +1,18 @@
+#!/bin/sh
+
+commit_msg=$(cat "$1")
+
+# Allowed patterns
+regex="^\[(FEATURE|DEV-EXP|BUG-FIX|OPTIMIZATION)\] .+"
+
+if ! echo "$commit_msg" | grep -Eq "$regex"; then
+  echo "❌ Invalid commit message!"
+  echo "Allowed formats:"
+  echo "  [FEATURE] Your message"
+  echo "  [DEV-EXP] Your message"
+  echo "  [BUG-FIX] Your message"
+  echo "  [OPTIMIZATION] Your message"
+  exit 1
+fi
+
+exit 0
